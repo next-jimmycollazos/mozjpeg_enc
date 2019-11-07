@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "name": "mozjpeg_enc",
+  "main": "mozjpeg_enc.js",
+  "scripts": {
+    "install": "napa",
+    "build": "docker run --rm -v $(pwd):/src trzeci/emscripten ./build.sh"
+  },
+  "napa": {
+    "mozjpeg": "mozilla/mozjpeg#v3.3.1"
+  },
+  "devDependencies": {
+    "napa": "3.0.0"
+  }
+}
